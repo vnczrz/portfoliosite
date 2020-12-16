@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+    <head>
+        <link rel="stylesheet" href = "hpcss.css">
+        <link rel="stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Encode Sans Condensed' rel='stylesheet'>
+        <title>Barkley BB Boi</title>
+        <style>
+                body, html {
+                  height: 100%;
+                  margin: 0;
+                  font-family: "Encode Sans Condensed";
+
+                }
+
+                .wrapper {
+                height: 100%;
+                font-family: "Encode Sans Condensed";
+                line-height: 1.5;
+                word-spacing: 2px;
+                letter-spacing: 0.5px;
+                }
+
+                .fixed {
+                background-attachment: scroll;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;
+                height: 100%;
+                width: 100%;
+                color: #eeeeee;
+                text-align: center;
+                display: table;
+                opacity: 0.7;
+                }
+
+                .scroll {
+                background-color: #c2c2d6;
+                padding: 28px 70px;
+                color: #e6e6e6;
+                }
+        </style>
+        <script src="hpjs.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+
+    <body>
+
+        <div class="wrapper">
+              <div class="fixed one">
+
+                <div class="logo">
+                    <img src="https://i.ibb.co/tqwsgp5/Coachella-Logo-small.png" width="180" height="90" alt="" loading="lazy">
+                </div>
+
+          <div class="btn-group" role="group" aria-label="Basic example">
+                      <a class="btn btn-secondary" href="index.html" role="button">Home</a>
+                      <a class="btn btn-secondary" href="day.html" role="button">Photo</a>
+                      <a class="btn btn-secondary" href="night.html" role="button">Contact</a>
+                      <a class="btn btn-secondary" href="about.html" role="button">About</a>
+
+                </div>
+
+
+
+
+
+                    <div class="hero-text">
+                        <h1 style="font-family: Encode Sans Condensed;">wish you were here</h1>
+
+                    </div>
+                    <a  id=arrow class="ct-btn-scroll ct-js-btn-scroll" href="#twopic">
+                        <img  alt="Scroll Down" src="https://img.icons8.com/ios-filled/60/000000/double-down.png"/>
+                    </a>
+                    <script>
+
+
+                    $(document).ready(function(){
+                      $("a").on('click', function(event) {
+                        if (this.hash !== "") {
+                          event.preventDefault();
+                          var hash = this.hash;
+                          $('html, body').animate({
+                            scrollTop: $(hash).offset().top
+                          }, 1000, function(){
+                            window.location.hash = hash;
+                          });
+                        }
+                      });
+                    });
+
+
+
+                    </script>
+
+                </div>
+            <div class="scroll"></div>
+
+            <div class="fixed two">
+
+                <div id='twopic' class="hero-text2">
+
+                </div>
+
+
+            </div>
+            <div class="scroll">
+
+            </div>
+            <div class="fixed three">
+                <div class="hero-text3">
+
+                </div>
+            </div>
+
+
+        <div class="footer">
+                  <p>powered by me - photos by ginajoy</p>
+            </div>
+        </div>
+
+    </body>
+</html>

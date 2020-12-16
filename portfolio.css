@@ -1,0 +1,35 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    padding: 2rem;
+  }
+  
+.text-highlight {
+  font-style: normal;
+  border-radius: 1em 0 1em 0;
+  text-shadow: 1px 1px 1px #fff;
+  background-image: 
+    linear-gradient(-100deg, 
+      rgba(255,250,150,0.15),
+      rgba(252, 147, 10, 0.219) 100%, 
+      rgba(255,250,150,0.25)
+    );
+}
+
+h1 {
+  font-size: 10rem;
+  font-weight: 600;
+  line-height: 1.35;
+  max-width: 720px;
+}
+
+.top_nav_{
+  box-shadow: 0px 7px 7px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}
+
+.about_container {
+  margin: auto;
+  width: 50%;
+  padding: 75px;
+}
+
